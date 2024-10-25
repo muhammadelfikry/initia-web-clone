@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: black;
+    padding-inline: 1.5rem;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid gray;
+}
+
+.nav-logo img {
+    width: 125px;
+}
+
+.nav-item li {
+    display: inline;
+    padding-inline: 1.5rem;
+    list-style-type: none;
+}
+
+nav a {
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+nav a:hover {
+    color: darkgray;
+}
+
+.jumbotron {
+    display: flex;
+    background-color: black;
+}
+
+.jumbotron img {
+    margin: auto;
+    width: 80%;
+}
+
+#content {
+    text-align: center;
+    background-color: black;
+    color: gray;
+}
+
+#introduction header .title {
+    font-size: 46px;
+    line-height: 4rem;
+    color: white;
+}
+
+.highlight {
+    text-decoration: underline;
+    font-style: italic;
+    color: gray;
+}
+
+#introduction header .description {
+    margin-top: 2rem;
+    font-size: 23px;
+    line-height: 1.5em;
+}
+
+
+#introduction section .section-description h2 {
+    color: white;
+    padding-block: 2rem;
+}
+
+#introduction section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#introduction section .section-description {
+    text-align: left;
+    width: 30%;
+    position: relative;
+    right: 70px;
+}
+
+#introduction section .section-description p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+#introduction section img {
+    max-width: 50%;
+}
+
+#featured h1, h2 {
+    color: white;
+}
+
+#featured {
+    display: flex;
+    margin-inline: 100px;
+    text-align: left;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+#featured .title {
+    display: flex;
+    align-items: center;
+}
+
+#featured .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 20px;
+}
+
+#featured .container section {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
